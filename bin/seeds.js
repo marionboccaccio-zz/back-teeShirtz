@@ -9,7 +9,7 @@ const teeShirtz = [
     name: "ADIDAS ORIGINALS",
     brand: "Adidas",
     color: "Black",
-    price: "20 €",
+    price: "20",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578401170/adidas_kllcin.png"
   },
@@ -17,7 +17,7 @@ const teeShirtz = [
     name: "RED NIKE",
     brand: "Nike",
     color: "Red",
-    price: "25 € ",
+    price: "25",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578402662/NikeRed_x2krep.png"
   },
@@ -25,7 +25,7 @@ const teeShirtz = [
     name: "TEE SHIRT CHICAGO TEXT",
     brand: "Mitchell & Ness",
     color: "Grey",
-    price: "240 €",
+    price: "240",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578402789/GreyChicago_tb2cib.png"
   },
@@ -33,7 +33,7 @@ const teeShirtz = [
     name: "DR PAPER PANAME GRAPHIC",
     brand: "Courir",
     color: "Pink",
-    price: "5 €",
+    price: "5",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578402873/panamePink_epdrez.png"
   },
@@ -41,7 +41,7 @@ const teeShirtz = [
     name: "HERITAGE LOGO",
     brand: "Ellesse",
     color: "Black",
-    price: "15 €",
+    price: "15",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578403000/blackEllesse_tt5nmr.png"
   },
@@ -49,7 +49,7 @@ const teeShirtz = [
     name: "MINIMOTIF TRIANGLE",
     brand: "Courir",
     color: "Beige",
-    price: "40 €",
+    price: "40",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578403102/beigeTriangle_oqrqsv.png"
   },
@@ -57,7 +57,7 @@ const teeShirtz = [
     name: "TEE SHIRT MESH LOGO",
     brand: "Lacoste",
     color: "Green",
-    price: "60 €",
+    price: "60",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578403312/greenLacoste_amuqpo.png"
   },
@@ -65,7 +65,7 @@ const teeShirtz = [
     name: "TEE SHIRT NASA",
     brand: "Mister Tee",
     color: "Green",
-    price: "45 €",
+    price: "45",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578403389/nasa_barage.png"
   },
@@ -73,7 +73,7 @@ const teeShirtz = [
     name: "TEE SHIRT JUST DO IT",
     brand: "Nike",
     color: "Red",
-    price: "75 €",
+    price: "75",
     image:
       "https://res.cloudinary.com/dtgusyvdy/image/upload/v1578403470/Justdo_wqszi8.png"
   }
@@ -82,9 +82,7 @@ const teeShirtz = [
 mongoose
   .connect("mongodb://localhost/back-teeShirtz", { useNewUrlParser: true })
   .then(() => {
-    console.log(
-      'Connected to Mongo!'
-    );
+    console.log("Connected to Mongo!");
   })
   .catch(err => {
     console.error("Error connecting to mongo", err);
